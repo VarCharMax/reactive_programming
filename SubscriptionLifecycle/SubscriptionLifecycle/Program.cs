@@ -7,7 +7,7 @@
       //this is the message observable responsible of producing messages
       using (var observer = new ConsoleIntegerProducer())
       //those are the message observer that consume messages
-      using (var consumer1 = observer.Subscribe(new IntegerConsumer(2)))
+      // using (var consumer1 = observer.Subscribe(new IntegerConsumer(2)))
       using (var consumer2 = observer.Subscribe(new IntegerConsumer(3)))
       {
         using (var consumer3 = observer.Subscribe(new IntegerConsumer(5)))
@@ -27,7 +27,7 @@
     public class ConsoleIntegerProducer : IObservable<int>, IDisposable
     {
       //the subscriber list
-      private readonly List<IObserver<int>> observerList = new List<IObserver<int>>();
+      private readonly List<IObserver<int>> observerList = [];
 
       //the cancellation token source for starting stopping
       //inner observable working thread
@@ -62,9 +62,9 @@
       // Update the OnObserverLifecycleEnd method signature to match the EventHandler<IObserver<int>> delegate
       void OnObserverLifecycleEnd(object? sender, IObserver<int> e)
       {
-        observerList.Remove(e);
         if (sender is Subscription<int> subscription)
         {
+          observerList.Remove(e);
           subscription.OnCompleted -= OnObserverLifecycleEnd;
         }
       }
@@ -101,6 +101,8 @@
         if (!cancellationSource.IsCancellationRequested)
         {
           cancellationSource.Cancel();
+
+
           while (!workerTask.IsCanceled)
             Thread.Sleep(100);
         }
@@ -133,6 +135,7 @@
 
       public void Dispose()
       {
+        //Trigger event.
         OnCompleted?.Invoke(this, observer);
 
         observer.OnCompleted();

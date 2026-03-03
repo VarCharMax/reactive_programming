@@ -48,26 +48,7 @@
         Console.WriteLine("Subscribing for {0}", observer.GetHashCode());
         subscriberList.Add(observer);
 
-        // Return a disposable that unsubscribes the observer when disposed
-        return new Unsubscriber(subscriberList, observer);
-      }
-
-      // Add the Unsubscriber class inside ConsoleIntegerProducer
-      private class Unsubscriber(List<IObserver<int>> subscribers, IObserver<int> observer) : IDisposable
-      {
-        private readonly List<IObserver<int>> _subscribers = subscribers;
-        private readonly IObserver<int> _observer = observer;
-        private bool _disposed;
-
-        public void Dispose()
-        {
-          if (!_disposed)
-          {
-            if (_subscribers.Contains(_observer))
-              _subscribers.Remove(_observer);
-            _disposed = true;
-          }
-        }
+        return null; // new Unsubscriber(subscriberList, observer);
       }
 
       //this code executes the observable infinite loop
