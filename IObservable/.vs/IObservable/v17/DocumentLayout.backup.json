@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\dev\\dotnet\\reactive_programming\\IObservable\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C62EDF7D-C695-4550-904F-788050B4BB28}|IObservable\\IObservable.csproj|c:\\dev\\dotnet\\reactive_programming\\iobservable\\iobservable\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62EDF7D-C695-4550-904F-788050B4BB28}|IObservable\\IObservable.csproj|solutionrelative:iobservable\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\IObservable\\IObservable\\Program.cs",
+              "RelativeDocumentMoniker": "IObservable\\Program.cs",
+              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\IObservable\\IObservable\\Program.cs",
+              "RelativeToolTip": "IObservable\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T08:19:14.349Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
