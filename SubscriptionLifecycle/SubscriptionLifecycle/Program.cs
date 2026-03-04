@@ -7,7 +7,7 @@
       //this is the message observable responsible of producing messages
       using (var observer = new ConsoleIntegerProducer())
       //those are the message observer that consume messages
-      // using (var consumer1 = observer.Subscribe(new IntegerConsumer(2)))
+      using (var consumer1 = observer.Subscribe(new IntegerConsumer(2)))
       using (var consumer2 = observer.Subscribe(new IntegerConsumer(3)))
       {
         using (var consumer3 = observer.Subscribe(new IntegerConsumer(5)))
@@ -28,7 +28,6 @@
     {
       //the subscriber list
       private readonly List<IObserver<int>> observerList = [];
-
       //the cancellation token source for starting stopping
       //inner observable working thread
       private readonly CancellationTokenSource cancellationSource;
@@ -36,6 +35,7 @@
       private readonly CancellationToken cancellationToken;
       //the running task that runs the inner running thread
       private readonly Task workerTask;
+
       public ConsoleIntegerProducer()
       {
         cancellationSource = new CancellationTokenSource();
@@ -47,15 +47,19 @@
       public IDisposable Subscribe(IObserver<int> observer)
       {
         if (observerList.Contains(observer))
+        {
           throw new ArgumentException("The observer is already subscribed to this observable");
+        }
 
         Console.WriteLine("Subscribing for {0}", observer.GetHashCode());
         observerList.Add(observer);
 
         //creates a new subscription for the given observer
         var subscription = new Subscription<int>(observer);
+
         //handle to the subscription lifecycle end event
         subscription.OnCompleted += OnObserverLifecycleEnd;
+
         return subscription;
       }
 
@@ -87,9 +91,13 @@
               break;
             }
             else if (!int.TryParse(input, out int value))
+            {
               observer.OnError(new FormatException("Unable to parse given value"));
+            }
             else
+            {
               observer.OnNext(value);
+            }
         }
         cancellationToken.ThrowIfCancellationRequested();
       }
@@ -111,11 +119,14 @@
         cancellationSource.Dispose();
         workerTask.Dispose();
 
+        //Because Dispose() has already been called on each observer by this stage, this list will probably be empty at this point.
+        //So in this implementation, this call is probably redundant, but it is still a good practice to ensure that all observers are notified of the completion of the observable's lifecycle.
         foreach (var observer in observerList)
         {
           observer.OnCompleted();
         }
 
+        //Since we have already called Dispose() on each observer, there is nothing to finalize.
         GC.SuppressFinalize(this);
       }
 
@@ -140,7 +151,6 @@
 
       public void Dispose()
       {
-        //Trigger event.
         OnCompleted?.Invoke(this, observer); //Remove the observer from the subscriber list and remove the event handler.
 
         observer.OnCompleted(); //Ack the observer that its lifecycle is completed and set flag to prevent future messages.
@@ -154,10 +164,13 @@
     {
       readonly int validDivider = validDivider;
       private bool finished = false;
+
       public void OnCompleted()
       {
         if (finished)
+        {
           OnError(new Exception("This consumer already finished its lifecycle"));
+        }
         else
         {
           finished = true;
@@ -173,11 +186,14 @@
       public void OnNext(int value)
       {
         if (finished)
+        {
           OnError(new Exception("This consumer finished its lifecycle"));
-
+        }
         //the simple business logic is made by checking divider result
         else if (value % validDivider == 0)
+        {
           Console.WriteLine("{0}: {1} divisible by {2}", GetHashCode(), value, validDivider);
+        }
       }
     }
   }
