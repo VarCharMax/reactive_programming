@@ -4,7 +4,7 @@
   {
     static void Main(string[] args)
     {
-      //this is the message observable responsible for producing messages.
+      //this is the message observable responsible of producing messages
       using (var observer = new ConsoleIntegerProducer())
       //those are the message observer that consume messages
       using (var consumer1 = observer.Subscribe(new IntegerConsumer(2)))
@@ -15,7 +15,6 @@
         }
         observer.Wait();
       }
-
       Console.WriteLine("END");
       Console.ReadLine();
     }
@@ -53,7 +52,7 @@
       Console.WriteLine("Subscribing for {0}", observer.GetHashCode());
       subscriberList.Add(observer);
 
-      return null; // new Unsubscriber(subscriberList, observer);
+      return null;
     }
 
     //this code executes the observable infinite loop

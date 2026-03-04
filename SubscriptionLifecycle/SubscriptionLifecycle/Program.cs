@@ -102,16 +102,19 @@
         {
           cancellationSource.Cancel();
 
-
           while (!workerTask.IsCanceled)
+          {
             Thread.Sleep(100);
+          }
         }
 
         cancellationSource.Dispose();
         workerTask.Dispose();
 
         foreach (var observer in observerList)
+        {
           observer.OnCompleted();
+        }
 
         GC.SuppressFinalize(this);
       }
@@ -120,7 +123,9 @@
       public void Wait()
       {
         while (!(workerTask.IsCompleted || workerTask.IsCanceled))
+        {
           Thread.Sleep(100);
+        }
       }
     }
 
@@ -136,9 +141,9 @@
       public void Dispose()
       {
         //Trigger event.
-        OnCompleted?.Invoke(this, observer);
+        OnCompleted?.Invoke(this, observer); //Remove the observer from the subscriber list and remove the event handler.
 
-        observer.OnCompleted();
+        observer.OnCompleted(); //Ack the observer that its lifecycle is completed and set flag to prevent future messages.
       }
     }
 
@@ -152,7 +157,7 @@
       public void OnCompleted()
       {
         if (finished)
-          OnError(new Exception("This consumer already finished it's lifecycle"));
+          OnError(new Exception("This consumer already finished its lifecycle"));
         else
         {
           finished = true;
@@ -168,7 +173,7 @@
       public void OnNext(int value)
       {
         if (finished)
-          OnError(new Exception("This consumer finished it's lifecycle"));
+          OnError(new Exception("This consumer finished its lifecycle"));
 
         //the simple business logic is made by checking divider result
         else if (value % validDivider == 0)
