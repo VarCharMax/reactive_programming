@@ -5,7 +5,7 @@
     static void Main(string[] args)
     {
       Console.WriteLine("Watching for new files");
-      using var publisher = new NewFileSavedMessagePublisher(@"[WRITE A PATH HERE]");
+      using var publisher = new NewFileSavedMessagePublisher(@"C:\Temp\");
       using var filter = new StringMessageFilter(".txt");
       //subscribe the filter to publisher messages
       publisher.Subscribe(filter);
@@ -21,12 +21,15 @@
   public sealed class NewFileSavedMessagePublisher : IObservable<string>, IDisposable
   {
     private readonly FileSystemWatcher watcher;
+    
     public NewFileSavedMessagePublisher(string path)
     {
       //creates a new file system event router
-      this.watcher = new FileSystemWatcher(@"C:\Users\USER\Desktop\4954\ss");
+      this.watcher = new FileSystemWatcher(path);
+
       //register for handling File Created event
       this.watcher.Created += Watcher_Created;
+
       //enable event routing
       this.watcher.EnableRaisingEvents = true;
     }
@@ -90,9 +93,9 @@
   /// </summary>
   public sealed class StringMessageFilter(string filter) : IObservable<string>, IObserver<string>, IDisposable
   {
-
     //the observer collection
     private readonly List<IObserver<string>> observerList = [];
+
     public IDisposable Subscribe(IObserver<string> observer)
     {
       this.observerList.Add(observer);
@@ -103,19 +106,26 @@
     //that disables message routing once
     //the OnCompleted has been invoked
     private bool hasCompleted = false;
+
     public void OnCompleted()
     {
       hasCompleted = true;
       foreach (var observer in observerList)
+      {
         observer.OnCompleted();
+      }
     }
 
     //routes error messages until not completed
     public void OnError(Exception error)
     {
       if (!hasCompleted)
+      {
         foreach (var observer in observerList)
+        {
           observer.OnError(error);
+        }
+      }
     }
 
     //routes valid messages until not completed
@@ -124,8 +134,12 @@
       Console.WriteLine("Filtering {0}", value);
 
       if (!hasCompleted && value.Contains(filter, StringComparison.InvariantCultureIgnoreCase))
+      {
         foreach (var observer in observerList)
+        {
           observer.OnNext(value);
+        }
+      }
     }
 
     public void Dispose()
