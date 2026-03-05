@@ -126,10 +126,12 @@ namespace CorrelatedEvents
     public IDisposable Subscribe(IObserver<string> observer)
     {
       this.observerList.Add(observer);
+
       return null;
     }
 
     private bool hasCompleted = false;
+
     public void OnCompleted()
     {
       hasCompleted = true;
@@ -159,7 +161,10 @@ namespace CorrelatedEvents
     //routes valid messages until not completed
     public void OnNext(string value)
     {
-      if (hasCompleted) return;
+      if (hasCompleted)
+      {
+        return;
+      }
 
       //check if subscriber has completed
       Console.WriteLine("Parsing message: {0}", value);
@@ -194,7 +199,9 @@ namespace CorrelatedEvents
         var newValue = string.Join("|", fileData);
 
         foreach (var observer in observerList)
+        {
           observer.OnNext(newValue);
+        }
 
         correlations.Remove(correlationID);
       }
