@@ -11,10 +11,11 @@ namespace EnumerableEvents
       var collection = new ObservableCollection<string>();
 
       //register a handler to catch collection changes
-      //collection.CollectionChanged += OnCollectionChanged; //disabled
+      // collection.CollectionChanged += OnCollectionChanged;
 
       using var observable = new NotifiableCollectionObservable(collection);
       using var observer = observable.Subscribe(new ConsoleStringObserver());
+
       collection.Add("ciao");
       collection.Add("hahahah");
 
@@ -63,7 +64,8 @@ namespace EnumerableEvents
       }
     }
 
-    private readonly List<IObserver<string>> observerList = new List<IObserver<string>>();
+    private readonly List<IObserver<string>> observerList = [];
+
     public IDisposable Subscribe(IObserver<string> observer)
     {
       observerList.Add(observer);
