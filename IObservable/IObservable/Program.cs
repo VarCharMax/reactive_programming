@@ -40,7 +40,7 @@
       cancellationToken = cancellationSource.Token;
 
       //start the inner worker task that runs the infinite loop for reading console input and routing messages to observers.
-      workerTask = Task.Factory.StartNew(OnInnerWorker, cancellationToken);
+      workerTask = Task.Factory.StartNew(() => OnInnerWorker(), cancellationToken);
     }
 
     //add another observer to the subscriber list
