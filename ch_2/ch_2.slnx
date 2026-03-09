@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="CorrelatedEvents/CorrelatedEvents.csproj" />
+  <Project Path="EnumerableEvents/EnumerableEvents.csproj" />
+  <Project Path="FilteringEvents/FilteringEvents.csproj" />
+  <Project Path="InfiniteCollectionEvents/InfiniteCollectionEvents.csproj" />
+  <Project Path="IObservable/IObservable.csproj" />
+  <Project Path="IObserver/IObserver.csproj" />
+  <Project Path="StreamEvents/StreamEvents.csproj" />
+  <Project Path="SubscriptionLifecycle/SubscriptionLifecycle.csproj" />
+</Solution>
