@@ -1,2 +1,14 @@
 <Solution>
+  <Project Path="AsyncSubject/AsyncSubject.csproj" />
+  <Project Path="BehaviourSubject/BehaviourSubject.csproj" />
+  <Project Path="CustomSubject/CustomSubject.csproj" />
+  <Project Path="DelaySubject/DelaySubject.csproj" />
+  <Project Path="MapSubject/MapSubject.csproj" />
+  <Project Path="MergeSubject/MergeSubject.csproj" />
+  <Project Path="ReplaySubject/ReplaySubject.csproj" />
+  <Project Path="SampleSubject/SampleSubject.csproj" />
+  <Project Path="ScanSubject/ScanSubject.csproj" />
+  <Project Path="SimpleSubject/SimpleSubject.csproj" />
+  <Project Path="SpawnSubject/SpawnSubject.csproj" />
+  <Project Path="ThrottleSubject/ThrottleSubject.csproj" />
 </Solution>
