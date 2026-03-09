@@ -6,14 +6,20 @@
   <Project Path="ConcatSubject/ConcatSubject.csproj" Id="820a9232-5307-4c4b-b6f6-489c045ad651" />
   <Project Path="CustomSubject/CustomSubject.csproj" />
   <Project Path="DelaySubject/DelaySubject.csproj" />
+  <Project Path="DistinctSubject/DistinctSubject.csproj" Id="b7280c4a-c536-4c20-8ba4-376d5798c768" />
+  <Project Path="DistinctUntilChangedSubject/DistinctUntilChangedSubject.csproj" Id="972cb154-88d1-413f-b263-1462ef00890e" />
+  <Project Path="ElementAtSubject/ElementAtSubject.csproj" Id="dfd3ba33-714e-4c9c-b900-f58cfbe11bff" />
   <Project Path="MapSubject/MapSubject.csproj" />
   <Project Path="MergeSubject/MergeSubject.csproj" />
   <Project Path="ReplaySubject/ReplaySubject.csproj" />
   <Project Path="SampleSubject/SampleSubject.csproj" />
   <Project Path="ScanSubject/ScanSubject.csproj" />
   <Project Path="SimpleSubject/SimpleSubject.csproj" />
+  <Project Path="SkipSubject/SkipSubject.csproj" Id="8de645e7-40c4-4f2d-9b7f-db0cd1511f0f" />
   <Project Path="SpawnSubject/SpawnSubject.csproj" />
   <Project Path="StartWithSubject/StartWithSubject.csproj" Id="e0b6db00-38f0-494e-a99a-942b0ab8e429" />
+  <Project Path="TakeSubject/TakeSubject.csproj" Id="519b838f-df6f-49e1-9ccd-a523a30e9dbb" />
   <Project Path="ThrottleSubject/ThrottleSubject.csproj" />
+  <Project Path="WhereSubject/WhereSubject.csproj" Id="516cd0e6-5a89-4eef-bb9a-fdeebbc4574e" />
   <Project Path="ZipSubject/ZipSubject.csproj" Id="0418a382-b2e5-401b-8dee-3ddcc9717bbc" />
 </Solution>
