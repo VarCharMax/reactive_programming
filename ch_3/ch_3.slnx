@@ -9,11 +9,14 @@
   <Project Path="DistinctSubject/DistinctSubject.csproj" Id="b7280c4a-c536-4c20-8ba4-376d5798c768" />
   <Project Path="DistinctUntilChangedSubject/DistinctUntilChangedSubject.csproj" Id="972cb154-88d1-413f-b263-1462ef00890e" />
   <Project Path="ElementAtSubject/ElementAtSubject.csproj" Id="dfd3ba33-714e-4c9c-b900-f58cfbe11bff" />
+  <Project Path="EverySomeIncludesSubject/EverySomeIncludesSubject.csproj" Id="ec269a3d-21ee-49bf-a1ef-392389d951a8" />
   <Project Path="MapSubject/MapSubject.csproj" />
+  <Project Path="MathSubject/MathSubject.csproj" Id="0cb5fea4-1915-4faa-bfc3-5eca41c176f5" />
   <Project Path="MergeSubject/MergeSubject.csproj" />
   <Project Path="ReplaySubject/ReplaySubject.csproj" />
   <Project Path="SampleSubject/SampleSubject.csproj" />
   <Project Path="ScanSubject/ScanSubject.csproj" />
+  <Project Path="SequenceEqualSubject/SequenceEqualSubject.csproj" />
   <Project Path="SimpleSubject/SimpleSubject.csproj" />
   <Project Path="SkipSubject/SkipSubject.csproj" Id="8de645e7-40c4-4f2d-9b7f-db0cd1511f0f" />
   <Project Path="SpawnSubject/SpawnSubject.csproj" />

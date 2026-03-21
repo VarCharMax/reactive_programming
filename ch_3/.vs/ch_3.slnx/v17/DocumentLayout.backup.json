@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{519B838F-DF6F-49E1-9CCD-A523A30E9DBB}|TakeSubject\\TakeSubject.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_3\\takesubject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{519B838F-DF6F-49E1-9CCD-A523A30E9DBB}|TakeSubject\\TakeSubject.csproj|solutionrelative:takesubject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DE645E7-40C4-4F2D-9B7F-DB0CD1511F0F}|SkipSubject\\SkipSubject.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_3\\skipsubject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DE645E7-40C4-4F2D-9B7F-DB0CD1511F0F}|SkipSubject\\SkipSubject.csproj|solutionrelative:skipsubject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1F5A52A-FC05-A3CA-401C-3E75FF4A8C68}|SequenceEqualSubject\\SequenceEqualSubject.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_3\\sequenceequalsubject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1F5A52A-FC05-A3CA-401C-3E75FF4A8C68}|SequenceEqualSubject\\SequenceEqualSubject.csproj|solutionrelative:sequenceequalsubject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,26 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\TakeSubject\\Program.cs",
-              "RelativeDocumentMoniker": "TakeSubject\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\TakeSubject\\Program.cs",
-              "RelativeToolTip": "TakeSubject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\SequenceEqualSubject\\Program.cs",
+              "RelativeDocumentMoniker": "SequenceEqualSubject\\Program.cs",
+              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\SequenceEqualSubject\\Program.cs",
+              "RelativeToolTip": "SequenceEqualSubject\\Program.cs",
+              "ViewState": "AgIAAAUAAACAmZmZmRkRwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T05:20:28.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\SkipSubject\\Program.cs",
-              "RelativeDocumentMoniker": "SkipSubject\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_3\\SkipSubject\\Program.cs",
-              "RelativeToolTip": "SkipSubject\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-09T05:18:11.87Z",
+              "WhenOpened": "2026-03-14T00:44:54.854Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ObservableCreate/ObservableCreate.csproj" Id="ac59e456-a3f7-44b6-a817-50b144203ca6" />
+  <Project Path="ObservableGenerate/ObservableGenerate.csproj" Id="96ebde61-9a6a-4d8b-b305-64ebe6f006f9" />
+  <Project Path="ObservableInterval/ObservableInterval.csproj" Id="759310e4-bee9-4ecb-be72-4d817c61ef14" />
+  <Project Path="ObservableRange/ObservableRange.csproj" Id="53f7d35d-1931-4873-adec-ef4322de8593" />
+  <Project Path="ObservableTimeout/ObservableTimeout.csproj" Id="37c885b1-6566-4951-91f7-62678b83acd7" />
+  <Project Path="ObservableTimer/ObservableTimer.csproj" Id="8bf8602c-0796-41cb-a869-9c2add534150" />
+</Solution>
