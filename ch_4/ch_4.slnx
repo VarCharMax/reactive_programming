@@ -1,9 +1,14 @@
 <Solution>
   <Project Path="ObservableCreate/ObservableCreate.csproj" Id="ac59e456-a3f7-44b6-a817-50b144203ca6" />
   <Project Path="ObservableGenerate/ObservableGenerate.csproj" Id="96ebde61-9a6a-4d8b-b305-64ebe6f006f9" />
+  <Project Path="ObservableIf/ObservableIf.csproj" />
   <Project Path="ObservableInterval/ObservableInterval.csproj" Id="759310e4-bee9-4ecb-be72-4d817c61ef14" />
+  <Project Path="ObservableJoin/ObservableJoin.csproj" Id="9a64eae0-20b0-4b87-8aa1-3479776eaf33" />
   <Project Path="ObservableRange/ObservableRange.csproj" Id="53f7d35d-1931-4873-adec-ef4322de8593" />
+  <Project Path="ObservableTakeSkipLast/ObservableTakeSkipLast.csproj" Id="de9a2902-8138-4536-9cd4-38d3d4fc801d" />
   <Project Path="ObservableTimeInterval/ObservableTimeInterval.csproj" Id="722268b8-970f-48dd-92a5-9785f9cfd2ff" />
   <Project Path="ObservableTimeout/ObservableTimeout.csproj" Id="37c885b1-6566-4951-91f7-62678b83acd7" />
   <Project Path="ObservableTimer/ObservableTimer.csproj" Id="8bf8602c-0796-41cb-a869-9c2add534150" />
+  <Project Path="ObservableUntilWhileSkip/ObservableUntilWhileSkip.csproj" Id="6a020c4f-cf0f-457b-859b-81f53de84f91" />
+  <Project Path="ObservableWhere/ObservableWhere.csproj" Id="dc25bff6-eae2-44c2-add2-c48137498bdb" />
 </Solution>

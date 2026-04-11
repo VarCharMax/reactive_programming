@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{722268B8-970F-48DD-92A5-9785F9CFD2FF}|ObservableTimeInterval\\ObservableTimeInterval.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observabletimeinterval\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{722268B8-970F-48DD-92A5-9785F9CFD2FF}|ObservableTimeInterval\\ObservableTimeInterval.csproj|solutionrelative:observabletimeinterval\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE9A2902-8138-4536-9CD4-38D3D4FC801D}|ObservableTakeSkipLast\\ObservableTakeSkipLast.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observabletakeskiplast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9A2902-8138-4536-9CD4-38D3D4FC801D}|ObservableTakeSkipLast\\ObservableTakeSkipLast.csproj|solutionrelative:observabletakeskiplast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,13 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableTimeInterval\\Program.cs",
-              "RelativeDocumentMoniker": "ObservableTimeInterval\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableTimeInterval\\Program.cs",
-              "RelativeToolTip": "ObservableTimeInterval\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAm5mZmZkEwBUAAAAXAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableTakeSkipLast\\Program.cs",
+              "RelativeDocumentMoniker": "ObservableTakeSkipLast\\Program.cs",
+              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableTakeSkipLast\\Program.cs",
+              "RelativeToolTip": "ObservableTakeSkipLast\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-21T02:27:57.997Z",
+              "WhenOpened": "2026-04-11T03:14:27.714Z",
               "EditorCaption": ""
             }
           ]
