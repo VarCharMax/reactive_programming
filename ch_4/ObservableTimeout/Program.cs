@@ -1,5 +1,7 @@
 ﻿using System.Reactive.Linq;
 
+using ConsoleObserver;
+
 namespace ObservableTimeout;
 
 internal class Program
@@ -11,7 +13,7 @@ internal class Program
         .Select(id => DateTime.UtcNow)
         .Timeout(DateTimeOffset.Now.AddSeconds(5));
 
-    absoluteTimeoutSequence.Subscribe(new ConsoleObserver());
+    absoluteTimeoutSequence.Subscribe(new ConsoleObserver<DateTime>());
 
     Console.WriteLine("Press RETURN to start the following example");
     Console.ReadLine();
@@ -36,32 +38,12 @@ internal class Program
         }
       }, TaskCreationOptions.PreferFairness);
 
-      return new Action(() =>
-      {
-        Console.WriteLine("Completed");
-      });
+      return new Action(() => Console.WriteLine("Completed"));
     })
         .Timeout(TimeSpan.FromSeconds(2));
 
-    relativeTimeoutSequence.Subscribe(new ConsoleObserver());
+    relativeTimeoutSequence.Subscribe(new ConsoleObserver<DateTime>());
 
     Console.ReadLine();
-  }
-}
-public class ConsoleObserver : IObserver<DateTime>
-{
-  public void OnCompleted()
-  {
-    Console.WriteLine("Observer completed!");
-  }
-
-  public void OnError(Exception error)
-  {
-    Console.WriteLine("Observer error: {0}", error);
-  }
-
-  public void OnNext(DateTime value)
-  {
-    Console.WriteLine("{0}", value);
   }
 }

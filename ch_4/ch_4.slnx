@@ -1,10 +1,21 @@
 <Solution>
+  <Project Path="ConsoleObserver/ConsoleObserver.csproj" Id="e98d43fc-f329-4b40-a108-af0e56fcf484" />
+  <Project Path="ObservableAggregate/ObservableAggregate.csproj" Id="88d9b3e7-0f9c-43b4-9b6e-9c38bb5f9516" />
   <Project Path="ObservableCreate/ObservableCreate.csproj" Id="ac59e456-a3f7-44b6-a817-50b144203ca6" />
   <Project Path="ObservableGenerate/ObservableGenerate.csproj" Id="96ebde61-9a6a-4d8b-b305-64ebe6f006f9" />
+  <Project Path="ObservableGroupBy/ObservableGroupBy.csproj" Id="71a80bc8-5e2f-47ec-91e4-6dcf668b5d9b" />
   <Project Path="ObservableIf/ObservableIf.csproj" />
+  <Project Path="ObservableIgnoreElements/ObservableIgnoreElements.csproj" Id="ea555524-4d88-4b22-916b-1b41e4dc9910" />
   <Project Path="ObservableInterval/ObservableInterval.csproj" Id="759310e4-bee9-4ecb-be72-4d817c61ef14" />
   <Project Path="ObservableJoin/ObservableJoin.csproj" Id="9a64eae0-20b0-4b87-8aa1-3479776eaf33" />
+  <Project Path="ObservableMaxByMinBy/ObservableMaxByMinBy.csproj" Id="0afab55f-1ee3-4d10-983f-f71219e2a1e7" />
+  <Project Path="ObservableMulticast/ObservableMulticast.csproj" Id="5d2c2618-9115-4ea9-841e-502a8352d740" />
+  <Project Path="ObservablePublishConnect/ObservablePublishConnect.csproj" />
+  <Project Path="ObservablePublishLast/ObservablePublishLast.csproj" Id="e291a0e9-060c-4258-b83d-5c466a8b566d" />
   <Project Path="ObservableRange/ObservableRange.csproj" Id="53f7d35d-1931-4873-adec-ef4322de8593" />
+  <Project Path="ObservableRefCount/ObservableRefCount.csproj" Id="dee57169-52e2-471b-bb73-b3778d503298" />
+  <Project Path="ObservableRepeat/ObservableRepeat.csproj" Id="9ac1887f-9e46-49f1-927f-39756c75d65c" />
+  <Project Path="ObservableReplay/ObservableReplay.csproj" Id="a65d5f7a-5e39-4fc3-9e7a-17914c787153" />
   <Project Path="ObservableTakeSkipLast/ObservableTakeSkipLast.csproj" Id="de9a2902-8138-4536-9cd4-38d3d4fc801d" />
   <Project Path="ObservableTimeInterval/ObservableTimeInterval.csproj" Id="722268b8-970f-48dd-92a5-9785f9cfd2ff" />
   <Project Path="ObservableTimeout/ObservableTimeout.csproj" Id="37c885b1-6566-4951-91f7-62678b83acd7" />
