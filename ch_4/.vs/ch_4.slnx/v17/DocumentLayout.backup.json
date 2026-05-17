@@ -1,122 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5D2C2618-9115-4EA9-841E-502A8352D740}|ObservableMulticast\\ObservableMulticast.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observablemulticast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D2C2618-9115-4EA9-841E-502A8352D740}|ObservableMulticast\\ObservableMulticast.csproj|solutionrelative:observablemulticast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A65D5F7A-5E39-4FC3-9E7A-17914C787153}|ObservableReplay\\ObservableReplay.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observablereplay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A65D5F7A-5E39-4FC3-9E7A-17914C787153}|ObservableReplay\\ObservableReplay.csproj|solutionrelative:observablereplay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E291A0E9-060C-4258-B83D-5C466A8B566D}|ObservablePublishLast\\ObservablePublishLast.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observablepublishlast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E291A0E9-060C-4258-B83D-5C466A8B566D}|ObservablePublishLast\\ObservablePublishLast.csproj|solutionrelative:observablepublishlast\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEE57169-52E2-471B-BB73-B3778D503298}|ObservableRefCount\\ObservableRefCount.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observablerefcount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEE57169-52E2-471B-BB73-B3778D503298}|ObservableRefCount\\ObservableRefCount.csproj|solutionrelative:observablerefcount\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9842B35C-A92B-7B50-697A-5FDCAA5FA95A}|ObservablePublishConnect\\ObservablePublishConnect.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observablepublishconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9842B35C-A92B-7B50-697A-5FDCAA5FA95A}|ObservablePublishConnect\\ObservablePublishConnect.csproj|solutionrelative:observablepublishconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9AC1887F-9E46-49F1-927F-39756C75D65C}|ObservableRepeat\\ObservableRepeat.csproj|c:\\dev\\dotnet\\reactive_programming\\ch_4\\observablerepeat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9AC1887F-9E46-49F1-927F-39756C75D65C}|ObservableRepeat\\ObservableRepeat.csproj|solutionrelative:observablerepeat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableMulticast\\Program.cs",
-              "RelativeDocumentMoniker": "ObservableMulticast\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableMulticast\\Program.cs",
-              "RelativeToolTip": "ObservableMulticast\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAMzMzM7MYwAoAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T03:02:27.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableReplay\\Program.cs",
-              "RelativeDocumentMoniker": "ObservableReplay\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableReplay\\Program.cs",
-              "RelativeToolTip": "ObservableReplay\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T02:34:46.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservablePublishLast\\Program.cs",
-              "RelativeDocumentMoniker": "ObservablePublishLast\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservablePublishLast\\Program.cs",
-              "RelativeToolTip": "ObservablePublishLast\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T02:25:04.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableRefCount\\Program.cs",
-              "RelativeDocumentMoniker": "ObservableRefCount\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableRefCount\\Program.cs",
-              "RelativeToolTip": "ObservableRefCount\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T02:16:04.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservablePublishConnect\\Program.cs",
-              "RelativeDocumentMoniker": "ObservablePublishConnect\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservablePublishConnect\\Program.cs",
-              "RelativeToolTip": "ObservablePublishConnect\\Program.cs",
-              "ViewState": "AgIAABMAAADg/////x8xwCsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T03:24:31.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableRepeat\\Program.cs",
-              "RelativeDocumentMoniker": "ObservableRepeat\\Program.cs",
-              "ToolTip": "C:\\dev\\dotnet\\reactive_programming\\ch_4\\ObservableRepeat\\Program.cs",
-              "RelativeToolTip": "ObservableRepeat\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T02:52:46.295Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
