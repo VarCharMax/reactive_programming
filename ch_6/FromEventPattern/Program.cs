@@ -5,6 +5,7 @@ namespace FromEventPattern;
 internal class Program
 {
   public static event EventHandler? UserIsTiredEvent;
+
   static void Main(string[] args)
   {
     //raise the event in 5 seconds
