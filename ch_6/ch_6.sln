@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlApp1", "XamlApp1\XamlAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlApp2", "XamlApp2\XamlApp2.csproj", "{ADD8BDF7-0587-4203-AF71-530C07138053}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormApp1", "FormApp1\FormApp1.csproj", "{48364F0A-A44A-45C3-803A-3EE328140BE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ADD8BDF7-0587-4203-AF71-530C07138053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADD8BDF7-0587-4203-AF71-530C07138053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADD8BDF7-0587-4203-AF71-530C07138053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
