@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlApp2", "XamlApp2\XamlAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormApp1", "FormApp1\FormApp1.csproj", "{48364F0A-A44A-45C3-803A-3EE328140BE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromEvent", "FromEvent\FromEvent.csproj", "{A8CA4059-36D6-439B-ADE7-F8877EFEACB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticEvent", "StaticEvent\StaticEvent.csproj", "{575B2438-452F-490C-BB45-460A881B5EA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48364F0A-A44A-45C3-803A-3EE328140BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CA4059-36D6-439B-ADE7-F8877EFEACB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CA4059-36D6-439B-ADE7-F8877EFEACB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CA4059-36D6-439B-ADE7-F8877EFEACB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CA4059-36D6-439B-ADE7-F8877EFEACB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575B2438-452F-490C-BB45-460A881B5EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575B2438-452F-490C-BB45-460A881B5EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575B2438-452F-490C-BB45-460A881B5EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575B2438-452F-490C-BB45-460A881B5EA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
