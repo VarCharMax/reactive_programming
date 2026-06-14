@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopThread", "LoopThread\Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerThread", "TimerThread\TimerThread.csproj", "{62749DEC-E98E-4035-9F83-56C9D07A818E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduledThread", "ScheduledThread\ScheduledThread.csproj", "{3B954007-DA5C-4BF0-8F57-467E17AEC49C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{62749DEC-E98E-4035-9F83-56C9D07A818E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62749DEC-E98E-4035-9F83-56C9D07A818E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62749DEC-E98E-4035-9F83-56C9D07A818E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B954007-DA5C-4BF0-8F57-467E17AEC49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B954007-DA5C-4BF0-8F57-467E17AEC49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B954007-DA5C-4BF0-8F57-467E17AEC49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B954007-DA5C-4BF0-8F57-467E17AEC49C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
