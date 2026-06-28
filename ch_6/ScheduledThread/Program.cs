@@ -2,37 +2,36 @@
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
 
-namespace ScheduledThread
+namespace ScheduledThread;
+
+internal class Program
 {
-  internal class Program
+  static void Main(string[] args)
   {
-    static void Main(string[] args)
+    var scheduler = Scheduler.Default;
+
+    var loopBasedSequence = Observable.Create<DateTime>(x =>
     {
-      var scheduler = Scheduler.Default;
-
-      var loopBasedSequence = Observable.Create<DateTime>(x =>
+      int cnt = 0;
+      while (true)
       {
-        int cnt = 0;
-        while (true)
+        Console.WriteLine("{0} -> Yielding new value...", Environment.CurrentManagedThreadId);
+        x.OnNext(DateTime.Now);
+        Thread.Sleep(1000);
+
+        if (++cnt == 3)
         {
-          Console.WriteLine("{0} -> Yielding new value...", Environment.CurrentManagedThreadId);
-          x.OnNext(DateTime.Now);
-          Thread.Sleep(1000);
-
-          if (++cnt == 5)
-          {
-            x.OnCompleted();
-            break;
-          }
+          x.OnCompleted();
+          break;
         }
-        return Disposable.Empty;
-      });
+      }
+      return Disposable.Empty;
+    });
 
-      loopBasedSequence.SubscribeOn(NewThreadScheduler.Default).Subscribe(x => Console.WriteLine("{0} -> {1}", Environment.CurrentManagedThreadId, x));
-      loopBasedSequence.SubscribeOn(NewThreadScheduler.Default).Subscribe(x => Console.WriteLine("{0} -> {1}", Environment.CurrentManagedThreadId, x));
-      loopBasedSequence.SubscribeOn(NewThreadScheduler.Default).Subscribe(x => Console.WriteLine("{0} -> {1}", Environment.CurrentManagedThreadId, x));
+    loopBasedSequence.SubscribeOn(TaskPoolScheduler.Default).Subscribe(x => Console.WriteLine("{0} -> {1}", Environment.CurrentManagedThreadId, x));
+    loopBasedSequence.SubscribeOn(TaskPoolScheduler.Default).Subscribe(x => Console.WriteLine("{0} -> {1}", Environment.CurrentManagedThreadId, x));
+    loopBasedSequence.SubscribeOn(TaskPoolScheduler.Default).Subscribe(x => Console.WriteLine("{0} -> {1}", Environment.CurrentManagedThreadId, x));
 
-      Console.ReadLine();
-    }
+    Console.ReadLine();
   }
 }
