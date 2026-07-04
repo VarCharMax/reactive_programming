@@ -21,39 +21,6 @@ namespace TestScheduler
 
       Console.WriteLine("scheduler.Now -> {0}", scheduler.Now);
 
-      //schedule a future job at 1 minute
-      scheduler.Schedule(TimeSpan.FromMinutes(1), () => Console.WriteLine("1 minute now"));
-      Console.WriteLine("-> {0}", scheduler.Now);
-
-      //advance to 00:00:30
-      scheduler.AdvanceTo(scheduler.Clock + TimeSpan.FromSeconds(30).Ticks);
-      Console.WriteLine("-> {0}", scheduler.Now);
-
-      //advance to 00:01:00
-      scheduler.AdvanceTo(scheduler.Clock + TimeSpan.FromSeconds(60).Ticks);
-      Console.WriteLine("-> {0}", scheduler.Now);
-
-      //schedule a periodic job and output the virtual time
-      //scheduler.SchedulePeriodic(TimeSpan.FromSeconds(1), () => Console.WriteLine("{0} -> Periodic", scheduler.Now));
-
-      //this would produce an infinite output
-      //scheduler.Start();
-
-      //to avoid the infinite output, we will need to schedule a Stop request
-      //scheduler.Schedule(TimeSpan.FromSeconds(60), () => scheduler.Stop());
-
-      //play the whole record
-      //scheduler.Start();
-
-      //append immediately
-      //scheduler.Schedule(TimeSpan.FromTicks(1), () => Console.WriteLine("Running again"));
-
-      //schedule another Stop
-      //scheduler.Schedule(TimeSpan.FromSeconds(60), () => scheduler.Stop());
-
-      //start again the scheduler
-      scheduler.Start();
-
       Console.ReadLine();
     }
   }
