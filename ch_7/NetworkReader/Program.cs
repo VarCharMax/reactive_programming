@@ -16,7 +16,7 @@ internal class Program
         .AsNetworkByteSource();
 
     //map the source message into another with a byte buffer of a single byte
-    var bufferUntileCRLFSequence = tcpClientsSequence
+    var bufferUntilCRLFSequence = tcpClientsSequence
         .Select(x => new { x.Key, buffer = new[] { x.Value }.AsEnumerable() })
         //group by client session IPEndPoint (IP/Port)
         .GroupBy(x => x.Key);
@@ -25,7 +25,7 @@ internal class Program
     var crlf = "\r\n"u8.ToArray();
 
     //subscribe to all nested sequence groups per remote endpoint
-    bufferUntileCRLFSequence.Subscribe(endpoint =>
+    bufferUntilCRLFSequence.Subscribe(endpoint =>
     {
       var clientSequence = endpoint
           //apply an accumulator function to obtain the byte buffer per client
