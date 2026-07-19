@@ -12,12 +12,7 @@ namespace InvoiceProcessLib
     public static Subject<ICommand> CreateValidator()
     {
       //the root sequence of all user input messages
-      var commandSource = new Subject<ICommand>();
-
-      //register the diagnostic output of all messages
-      commandSource.Materialize().Subscribe(Console.WriteLine);
-
-      //register validation error output
+      var commandSource = new Subject<ICommand>();  //register validation error output
       var validables = commandSource
           //routes only validable messages
           .OfType<IValidable>()

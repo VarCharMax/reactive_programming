@@ -9,6 +9,9 @@ namespace InvoiceProcessor
       //the root sequence of all user input messages
       var commandSource = InvoiceProcessLib.InvoiceProcessor.CreateValidator();
 
+      //register the diagnostic output of all messages
+      // commandSource.Materialize().Subscribe(Console.WriteLine);
+
       Console.WriteLine("Return to start saving an invoice");
       Console.ReadLine();
 

@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\InvoiceLib\InvoiceLib.csproj" />
     <ProjectReference Include="..\InvoiceProcessLib\InvoiceProcessLib.csproj" />
+    <ProjectReference Include="..\ValidationLib\ValidationLib.csproj" />
   </ItemGroup>
 
 </Project>
