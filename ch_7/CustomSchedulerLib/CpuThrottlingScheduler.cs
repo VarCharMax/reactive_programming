@@ -12,6 +12,8 @@ public class CpuThrottlingScheduler : IScheduler, IDisposable
   public DateTimeOffset Now { get; private set; }
 
   private static readonly PerformanceCounter CpuTimeCounter = new("Processor Information", "% Processor Time", "_Total");
+  private readonly List<CancellationTokenSource> _cancellationTokens = [];
+
   public IDisposable Schedule<TState>(TState state, Func<IScheduler, TState, IDisposable> action)
   {
     while (true)
@@ -24,12 +26,30 @@ public class CpuThrottlingScheduler : IScheduler, IDisposable
         break;
     }
 
+    var cts = new CancellationTokenSource();
+    _cancellationTokens.Add(cts);
+    var token = cts.Token;
+
     //once the CPU time is lower than the limit
     //enqueue the job on the thread pool
-    new Thread(new ThreadStart(() => action(this, state))).Start();
+    var thread = new Thread(() =>
+    {
+      if (!token.IsCancellationRequested)
+      {
+        action(this, state);
+      }
+    });
+    thread.Start();
     Now += TimeSpan.FromTicks(1);
 
-    return Disposable.Create(() => Console.WriteLine($"Job completed at {DateTime.Now} on thread {Environment.CurrentManagedThreadId}"));
+    return Disposable.Create(() =>
+    {
+      cts.Cancel();
+      thread.Join(500); // Wait for thread to finish, up to 500ms
+      Console.WriteLine($"Job completed at {DateTime.Now} on thread {Environment.CurrentManagedThreadId}");
+      _cancellationTokens.Remove(cts);
+      cts.Dispose();
+    });
   }
 
   /// <summary>
@@ -50,6 +70,12 @@ public class CpuThrottlingScheduler : IScheduler, IDisposable
 
   public void Dispose()
   {
+    foreach (var cts in _cancellationTokens.ToArray())
+    {
+      cts.Cancel();
+      cts.Dispose();
+    }
+    _cancellationTokens.Clear();
     CpuTimeCounter.Dispose();
     GC.SuppressFinalize(this);
   }

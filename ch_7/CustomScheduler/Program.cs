@@ -10,7 +10,7 @@ namespace CustomScheduler
     [SupportedOSPlatform("windows")]
     static void Main(string[] args)
     {
-      var scheduler = new CpuThrottlingScheduler() { CpuLimitPercentage = 50 };
+      using var scheduler = new CpuThrottlingScheduler() { CpuLimitPercentage = 50 };
 
       //a simple looping sequence
       var sequence = Observable.Range(0, 10, scheduler);
